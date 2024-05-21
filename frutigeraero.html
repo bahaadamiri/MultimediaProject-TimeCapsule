@@ -19,11 +19,10 @@
             color: black;
         }
 
-        a{
+        a {
             text-decoration: none;
             font-weight: bold;
             color: rgb(50, 145, 177);
-            
         }
 
         li a {
@@ -31,20 +30,16 @@
             font-weight: normal;
         }
 
-        
-
-        
-
-    
         nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(180deg, rgba(239, 239, 239, 0.9) 0%, rgba(197, 206, 206, 0.9) 100%);
-        padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, rgba(239, 239, 239, 0.9) 0%, rgba(197, 206, 206, 0.9) 100%);
+            padding: 10px;
+            border-radius: 0;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
         }
 
-        
         nav ul {
             list-style: none;
             padding: 0;
@@ -52,33 +47,36 @@
             display: flex;
             justify-content: center;
         }
+
         nav ul li {
             margin: 0 15px;
         }
+
         nav ul li a {
             text-decoration: none;
             color: black;
-
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
+
         nav ul li a:hover {
             color: blue;
         }
 
         nav img {
             max-height: 60px;
-            margin-right: 20px;
         }
 
-        .info-box{
-            background: linear-gradient(180deg, rgba(242, 244, 246, 0.9) 0%, rgba(237, 239, 239, 0.9) 100%);
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            width: 80%;
-            max-width: 800px;
-            text-align: center;
+        nav ul li img {
+            height: 50px; 
+            width: auto; 
         }
+
+       
+       
+
         .info-box {
             border-radius: 15px;
             padding: 25px;
@@ -90,7 +88,6 @@
             gap: 5px;
             color: black;
             background: linear-gradient(180deg, rgba(247, 247, 248, 0.9) 0%, rgba(242, 246, 246, 0.9) 100%);
-            border-radius: 15px;
             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), inset 0px 2px 1px rgba(255, 255, 255, 0.3), inset 0px -2px 1px rgba(0, 0, 0, 0.4);
             text-align: left;
         }
@@ -101,31 +98,71 @@
             border-radius: 15px;
         }
 
+        #main {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 120px; 
+            padding-bottom: 40px; 
+        }
+
+     
+
         
 
 
-       
-        #main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 120px; /* Adjust based on header/nav height */
-            padding-bottom: 40px; /* Space for footer */
+        .sidebar {
+            background: linear-gradient(180deg, rgba(242, 244, 246, 0.9) 0%, rgba(237, 239, 239, 0.9) 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 20%;
+            max-width: 250px;
+            text-align: left;
+            height: fit-content;
         }
-      
+
+        .left-sidebar ul, .right-sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .left-sidebar ul li, .right-sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .left-sidebar ul li a, .right-sidebar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .left-sidebar ul li a:hover, .right-sidebar ul li a:hover {
+            color: blue;
+        }
+
         
     </style>
 </head>
 <body>
     <nav>
-        <img src="img/frutigerlogo.png" alt="Logo">
         <ul>
-            <li><a href="frutigeraero.html">Frutiger Aero</a></li>
-            <li><a href="y2k.html">Y2K</a></li>
-            <li><a href="flat.html">Flat Design</a></li>
+            <li><a href="frutigeraero.html"><img src="img/frutigerlg.png" alt="frt"></a></li>
+            <li><a href="y2k.html"><img src="img/y2klg.png" alt="y2k"></a></li>
         </ul>
     </nav>
     <div id="main">
+        <div class="sidebar left-sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#section1">Frutiger Aero Aesthetic</a></li>
+                <li><a href="#section2">The Emergence of Frutiger Aero Design</a></li>
+                <li><a href="#section3">Key Motifs that Define Frutiger Aero Design</a></li>
+                <li><a href="#section4">The Influence of Color in Frutiger Aero Design</a></li>
+                <li><a href="#section5">Applications of Frutiger Aero</a></li>
+                <li><a href="#section6">Legacy of Frutiger Aero Design</a></li>
+            </ul>
+        </div>
         <div class="info-box">
             <h2> Frutiger Aero Aesthetic</h2>
             <img src="img/3.webp">
@@ -161,14 +198,44 @@
               <p>The widespread usage of blue as a central color is rooted in its ability to convey confidence and reliability. Being calming and easy on the eyes, it became a default choice among designers for eliciting trust from users. Meanwhile, other colors like green and yellow helped establish the connection to nature, foster creativity, and portray optimism</p>
               <h2>Applications of Frutiger Aero</h2>
               <p>Unlike with the Y2K aesthetic of the Late-1990s and early 2000s, which movies, TV, music, and video games of a science-fiction persuasion were based around, there was less overlap between this aesthetic and popular culture. It was and is mainly a corporate design philosophy. The Hexatron aesthetic, with its focus on dark surfaces, UI and the huge emphasis on blue color, eventually edged out Frutiger Aero to become more popular.</p>
-              <h2>Media</h2>
-              <h3>Television</h3>
+              <h2>History</h2>
+              <h3>Primitive Stages (2001–2004)</h3>
+              <p>The earliest signs of Frutiger Aero appeared in 2001 with the releases of Microsoft's Windows XP and Apple's Mac OS X. The "Bliss" desktop background of XP and the skeuomorphic design of OS X (itself was derived from early versions of iMovie) have been noted by some as precursors to FA, though both have also been categorized as part of the Y2K era. It was also at this time that Microsoft began development of Windows Longhorn (later renamed Windows Vista), with elements of what was to become the Windows Aero theme gradually being added.
+
+              </p>
+              <img src="img/prim.webp" alt="">
+              <h3>Mainstream Adoption (2004–2007)</h3>
+              <p>The mainstreaming of Frutiger Aero began in Late-2004 with the releases of Windows Media Player 10 (featuring design ideas found in Longhorn), the start of the Seventh Generation of Video Game Consoles with the PlayStation Portable (XrossMediaBar, in development since the PSX in 2003) and Nintendo DS, and Apple's iPod "Silhouette" advertising campaign (Four Colors). Frutiger Aero began to become more common in 2005 and 2006, with the release of Windows XP Media Center Edition 2005, Longhorn Build 5048 (the first build where the system's entire UI was Aero), Windows Vista Beta 1, the Xbox 360 (Blades Dashboard), Nintendo DS Lite, PlayStation 3, and Nintendo Wii.
+
+              </p>
+              <p>By 2007, with the release of Windows Vista (retail version), the first iPhone (iPhone OS 1.0), and Mac OS X Leopard (10.5), Frutiger Aero was completely established. As the Cyber Y2K aesthetic was fading, the nature-oriented designs of Frutiger Aero were seen by some as "humanizing" tech and making it more accessible to a wider audience, in comparison to the edgier, Metalheart/Cyberpunk designs of Y2K.</p>
+              <img src="img/main.webp" alt="">
+              <h3>Prime (2007–2012)</h3>
+              <p>During Frutiger Aero's prime, most advertising, media, stock imagery and technology released during this time embodied the aesthetic or was heavily influenced by it. Frutiger Aero also shares similarities with the Y2K aesthetic and is considered its successor, as it shares a similar bright and glossy futuristic look, albeit in a more refined, corporate form. It was also concurrent with the McBling, Surf Crush, and ElectroPop 08 aesthetics, and overlaps with them with varying degrees. During this time, various sub-aesthetics began to arise due to the Frutiger Umbrella becoming increasingly broad in nature.</p>
+              <h3>Decline and Dormancy (2012–present)</h3>
+              <p>In 2012, the skeuomorphic look of Frutiger Aero (i.e. Windows 7) started to fade in favor of the Flat Design look (i.e. Windows 8/10). Nintendo's Wii U (2012) was the last videogame console that used Frutiger Aero in full. However, the Wii U was a commercial failure, only selling 13.56 million units, further contributing to Frutiger Aero's demise. In some cases, companies switched first to Frutiger Metro, then to Flat Design. By 2013, Flat Design began overshadowing Frutiger Aero, the release of iOS 7 being the most major example of this. In 2017, a minimalist web/tech aesthetic appeared known as Corporate Memphis, officially symbolizing the death of Frutiger Aero. However, there are still some areas where Frutiger Aero is used today, especially in retail boxes for medical and cleaning products, as well as school textbooks.</p>
+              <img src="img/ios.webp" alt="">
               <h2>Legacy of Frutiger Aero Design</h2>
               <p>Although the Frutiger Aero style may not be at the forefront of web design trends today, its influence can still be felt throughout the digital realm. Aesthetic preferences have shifted over the years, with newer trends such as minimalism and flat design taking center stage. However, many of the fundamental principles promoted by Frutiger Aero continue to resonate: human-centered design, seamless user experience, and a visually enticing environment.</p>
               <p>In conclusion, the Frutiger Aero design, born out of the creativity of Asadal Design, Microsoft, and Apple, has left an indelible mark on the web design world. Its unique combination of glossy textures, humanist elements, and nature-inspired patterns have shaped not just the visual appearance but also the overall user experience in the Web 2.0 era. And though design trends will continue to evolve, the impact of this approach is still felt today through its core principles and everlasting contributions to digital aesthetics.</p>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/bTd2VLTBOX4?si=TIwyn9mOBIVI05FJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" style="display: block; margin: auto;"></iframe>
-          
-            
+        </div>
+        <div class="sidebar right-sidebar">
+            <h2>References</h2>
+            <ul>
+                <li><a href="https://www.microsoft.com/" target="_blank">Microsoft</a></li>
+                <li><a href="https://www.apple.com/" target="_blank">Apple</a></li>
+                <li><a href="https://www.instagram.com/lofisofi" target="_blank">Sofi Lee</a></li>
+                <li><a href="https://cari.institute/" target="_blank">CARI Institute</a></li>
+                <li><a href="https://www.reddit.com/r/FrutigerAero/" target="_blank">Frutiger Aero on Reddit</a></li>
+                <li><a href="https://www.palmolive.co.uk/products-range/liquid-hand-soap/palmolive-aquarium-liquid-hand-soap" target="_blank">Frutiger Aero Soap</a></li>
+                <li><a href="https://skeuoss.net/products/frutiger-aero-fish-lamp" target="_blank">Frutiger Aero Fish Lamp</a></li>
+            </ul>
+        </div>
+    </div>
+
+              
+        
              
             
             
